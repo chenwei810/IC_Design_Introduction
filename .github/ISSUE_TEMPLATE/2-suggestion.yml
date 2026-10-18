@@ -1,0 +1,62 @@
+name: 內容建議 / Content suggestion
+description: 建議改寫、新增內容或補充圖片 / Suggest a rewrite, new content or a figure
+title: "[建議] "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: chapter
+    attributes:
+      label: 章節 / Chapter
+      options:
+        - "第 0 章 IC 設計全景 / Ch. 0 The Big Picture"
+        - "第 1 章 規格與架構 / Ch. 1 Specification and Architecture"
+        - "第 2 章 從電晶體到邏輯閘 / Ch. 2 From Transistors to Logic Gates"
+        - "第 3 章 組合邏輯與循序邏輯 / Ch. 3 Combinational and Sequential Logic"
+        - "第 4 章 RTL 與 Verilog / Ch. 4 RTL and Verilog"
+        - "第 5 章 時脈與重置 / Ch. 5 Clocks and Resets"
+        - "第 6 章 驗證 / Ch. 6 Verification"
+        - "第 7 章 邏輯合成 / Ch. 7 Logic Synthesis"
+        - "第 8 章 靜態時序分析 / Ch. 8 Static Timing Analysis"
+        - "第 9 章 可測試性設計 / Ch. 9 Design for Test"
+        - "第 10 章 平面規劃與電源網路 / Ch. 10 Floorplanning and the Power Network"
+        - "第 11 章 擺置與時脈樹 / Ch. 11 Placement and the Clock Tree"
+        - "第 12 章 繞線與寄生效應 / Ch. 12 Routing and Parasitics"
+        - "第 13 章 簽核 / Ch. 13 Signoff"
+        - "第 14 章 下線 / Ch. 14 Tape-out"
+        - "第 15 章 晶片回來之後 / Ch. 15 After Silicon Returns"
+        - "附錄 A 術語總表 / Appendix A Glossary"
+        - "附錄 B 設計現場行話 / Appendix B Designer Jargon"
+        - "附錄 C 延伸閱讀 / Appendix C Further Reading"
+        - "附錄 D Verilog 速查 / Appendix D Verilog Quick Reference"
+        - "練習檔 practice/ / Practice files"
+        - "README 或其他專案文件 / README or other project documents"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 建議類型 / Type
+      options:
+        - 說明不清楚，建議改寫 / Unclear explanation
+        - 新增名詞框、Know-how 框或軟體對照 / New term box, know-how box or software analogy
+        - 新增或修正「深入一點」 / New or corrected deep dive
+        - 「跟著做」跑不出書上的結果 / A Try-it step does not give the book's output
+        - 新增段落或主題 / New section or topic
+        - 繪製或改善圖片 / New or better figure
+        - 其他 / Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 說明 / Details
+      description: 想改善什麼？為什麼？如果有草稿，也可以直接貼上。跟著做的問題請附上工具版本與輸出。 / What would you improve and why? For Try-it problems, include your tool versions and output.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confidentiality
+    attributes:
+      label: 確認 / Confirmation
+      options:
+        - label: 我提供的內容不包含任何公司的機密資訊或 PDK 資料 / My suggestion contains no confidential information or PDK data of any company
+          required: true

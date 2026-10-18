@@ -1,0 +1,27 @@
+   Number of cells:                865
+     $_ANDNOT_                     297
+     $_AND_                         59
+     $_DFFE_PN0P_                   24
+     $_NAND_                        40
+     $_NOR_                         13
+     $_NOT_                         41
+     $_ORNOT_                       18
+     $_OR_                          91
+     $_XNOR_                        64
+     $_XOR_                        218
+
+   20 rtl/mac_ch06.v
+ 5168 netlist.v
+ 5188 total
+  \$_XOR_  _0822_ (
+    .A(_0609_),
+    .B(_0599_),
+    .Y(_0620_)
+  );
+  \$_DFFE_PN0P_  \acc_reg[6]  /* _1659_ */ (
+    .C(clk),
+    .D(_0000_[6]),
+    .E(_0001_),
+    .Q(acc[6]),
+    .R(rst_n)
+  );

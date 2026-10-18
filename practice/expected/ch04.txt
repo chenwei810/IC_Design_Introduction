@@ -1,0 +1,4 @@
+clr                ->  acc = 0   (expected 0)
+a =    3, b =    4  ->  acc = 12   (expected 12)
+a =    5, b =    6  ->  acc = 42   (expected 42)
+PASS: 3 of 3 checks passed

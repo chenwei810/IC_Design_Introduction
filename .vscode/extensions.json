@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "yzhang.markdown-all-in-one",
+    "DavidAnson.vscode-markdownlint",
+    "bierner.markdown-mermaid",
+    "bierner.github-markdown-preview",
+    "EditorConfig.EditorConfig",
+    "mshr-h.veriloghdl"
+  ]
+}

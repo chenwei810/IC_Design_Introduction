@@ -1,0 +1,9 @@
+1 0 0 0 0
+0 1 -127 -49 6223
+0 1 80 50 10223
+MISMATCH at line 2: a = -127, b = -49, expected 6223, got 26703
+MISMATCH at line 3: a = 80, b = 50, expected 10223, got 30703
+MISMATCH at line 4: a = -12, b = -73, expected 11099, got 75355
+FAIL: 195 of 208 checks failed
+PASS: 208 of 208 checks passed
+PASS: 3 of 3 checks passed

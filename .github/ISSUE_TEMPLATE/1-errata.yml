@@ -1,0 +1,76 @@
+name: 勘誤回報 / Erratum
+description: 回報錯字、技術錯誤或過時的內容 / Report a typo, a technical error or outdated content
+title: "[勘誤] "
+labels: ["errata"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝你幫忙找出錯誤！修正技術內容時，請盡量附上公開的參考資料，或你實際執行得到的結果。
+        Thank you for helping us fix mistakes! For technical corrections, please include public references or the output you actually got.
+  - type: dropdown
+    id: language
+    attributes:
+      label: 版本 / Version
+      options:
+        - 繁體中文 / Traditional Chinese
+        - English
+        - 日本語 / Japanese
+        - 한국어 / Korean
+        - 多個語言 / Several languages
+    validations:
+      required: true
+  - type: dropdown
+    id: chapter
+    attributes:
+      label: 章節 / Chapter
+      options:
+        - "第 0 章 IC 設計全景 / Ch. 0 The Big Picture"
+        - "第 1 章 規格與架構 / Ch. 1 Specification and Architecture"
+        - "第 2 章 從電晶體到邏輯閘 / Ch. 2 From Transistors to Logic Gates"
+        - "第 3 章 組合邏輯與循序邏輯 / Ch. 3 Combinational and Sequential Logic"
+        - "第 4 章 RTL 與 Verilog / Ch. 4 RTL and Verilog"
+        - "第 5 章 時脈與重置 / Ch. 5 Clocks and Resets"
+        - "第 6 章 驗證 / Ch. 6 Verification"
+        - "第 7 章 邏輯合成 / Ch. 7 Logic Synthesis"
+        - "第 8 章 靜態時序分析 / Ch. 8 Static Timing Analysis"
+        - "第 9 章 可測試性設計 / Ch. 9 Design for Test"
+        - "第 10 章 平面規劃與電源網路 / Ch. 10 Floorplanning and the Power Network"
+        - "第 11 章 擺置與時脈樹 / Ch. 11 Placement and the Clock Tree"
+        - "第 12 章 繞線與寄生效應 / Ch. 12 Routing and Parasitics"
+        - "第 13 章 簽核 / Ch. 13 Signoff"
+        - "第 14 章 下線 / Ch. 14 Tape-out"
+        - "第 15 章 晶片回來之後 / Ch. 15 After Silicon Returns"
+        - "附錄 A 術語總表 / Appendix A Glossary"
+        - "附錄 B 設計現場行話 / Appendix B Designer Jargon"
+        - "附錄 C 延伸閱讀 / Appendix C Further Reading"
+        - "附錄 D Verilog 速查 / Appendix D Verilog Quick Reference"
+        - "練習檔 practice/ / Practice files"
+        - "README 或其他專案文件 / README or other project documents"
+    validations:
+      required: true
+  - type: textarea
+    id: original
+    attributes:
+      label: 原文 / Original text
+      description: 請貼上有問題的句子 / Paste the sentence that has the problem
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建議的修改 / Suggested correction
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: 依據或參考資料 / References
+      description: 例如公開的書籍、論文、標準，或實際執行的結果 / e.g. public books, papers, standards or the output you actually got
+  - type: checkboxes
+    id: confidentiality
+    attributes:
+      label: 確認 / Confirmation
+      options:
+        - label: 我提供的內容不包含任何公司的機密資訊或 PDK 資料 / My report contains no confidential information or PDK data of any company
+          required: true

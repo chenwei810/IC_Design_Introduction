@@ -1,0 +1,12 @@
+MISMATCH at line 840: a = 100, b = 100, expected 8388607, got -8387216
+MISMATCH at line 841: a = 100, b = 100, expected 8388607, got -8377216
+MISMATCH at line 842: a = 100, b = 100, expected 8388607, got -8367216
+dot product done: acc = -5257216
+FAIL: 314 of 1153 checks failed
+dot product done: acc = 5110000
+dot product done: acc = 5110000
+dot product done: acc = 1300000
+PASS: 1155 of 1155 checks passed
+dot product done: acc = 8388607
+PASS: 1153 of 1153 checks passed
+PASS: 208 of 208 checks passed

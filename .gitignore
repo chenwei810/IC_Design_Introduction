@@ -1,0 +1,16 @@
+# 作業系統 / OS
+.DS_Store
+Thumbs.db
+
+# 編輯器 / Editors
+*.swp
+.vscode/*
+!.vscode/extensions.json
+
+# Python
+__pycache__/
+
+# 練習檔的產出 / Outputs of the practice files
+practice/sim
+practice/netlist.v
+practice/*.vcd

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 290" width="640" height="290" role="img" aria-label="Timing diagram: a clock rising edge, with a window before it and a window after it in which the data must stay stable">
+<rect x="1" y="1" width="638" height="288" rx="12" fill="#f6f8fa" stroke="#d0d7de" stroke-width="2"/>
+<rect x="260" y="40" width="60" height="230" fill="#ffd36e" fill-opacity="0.45"/>
+<rect x="320" y="40" width="30" height="230" fill="#ff8fc7" fill-opacity="0.45"/>
+<polyline points="60,110 120,110 120,60 220,60 220,110 320,110 320,60 420,60 420,110 520,110 520,60 580,60" fill="none" stroke="#57606a" stroke-width="4" stroke-linejoin="round"/>
+<line x1="320" y1="34" x2="320" y2="276" stroke="#3f4f8f" stroke-width="2.5" stroke-dasharray="7 6"/>
+<line x1="60" y1="170" x2="185" y2="170" stroke="#0969da" stroke-width="4"/>
+<line x1="60" y1="230" x2="185" y2="230" stroke="#0969da" stroke-width="4"/>
+<line x1="185.0" y1="170" x2="205.0" y2="230" stroke="#0969da" stroke-width="4"/>
+<line x1="185.0" y1="230" x2="205.0" y2="170" stroke="#0969da" stroke-width="4"/>
+<line x1="205" y1="170" x2="425" y2="170" stroke="#0969da" stroke-width="4"/>
+<line x1="205" y1="230" x2="425" y2="230" stroke="#0969da" stroke-width="4"/>
+<line x1="425.0" y1="170" x2="445.0" y2="230" stroke="#0969da" stroke-width="4"/>
+<line x1="425.0" y1="230" x2="445.0" y2="170" stroke="#0969da" stroke-width="4"/>
+<line x1="445" y1="170" x2="580" y2="170" stroke="#0969da" stroke-width="4"/>
+<line x1="445" y1="230" x2="580" y2="230" stroke="#0969da" stroke-width="4"/>
+<rect x="205" y="172" width="220" height="56" fill="#0969da" fill-opacity="0.10"/>
+<circle cx="346" cy="34" r="13" fill="#3f4f8f"/><text x="346" y="39" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff">1</text>
+<circle cx="290" cy="252" r="13" fill="#3f4f8f"/><text x="290" y="257" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff">2</text>
+<circle cx="335" cy="252" r="13" fill="#3f4f8f"/><text x="335" y="257" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff">3</text>
+<circle cx="270" cy="200" r="13" fill="#3f4f8f"/><text x="270" y="205" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff">4</text>
+<circle cx="195" cy="252" r="13" fill="#3f4f8f"/><text x="195" y="257" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff">5</text>
+</svg>

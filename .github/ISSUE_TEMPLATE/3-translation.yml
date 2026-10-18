@@ -1,0 +1,34 @@
+name: 翻譯 / Translation
+description: 認領翻譯，或回報翻譯的問題 / Claim a translation or report a translation problem
+title: "[翻譯] "
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        開始之前，請先閱讀翻譯指南：TRANSLATIONS.md
+        Please read TRANSLATIONS.md before you start.
+  - type: input
+    id: language
+    attributes:
+      label: 語言 / Language
+      description: 例如 English (en)、日本語 (ja) / e.g. English (en), Japanese (ja)
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 類型 / Type
+      options:
+        - 認領翻譯 / Claim a translation
+        - 回報翻譯問題 / Report a translation problem
+        - 術語討論 / Terminology discussion
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 範圍與說明 / Scope and details
+      description: 要翻譯哪些章節，或是發現了什麼問題 / Which chapters you will translate, or what problem you found
+    validations:
+      required: true

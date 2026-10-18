@@ -1,0 +1,7 @@
+Longest topological path in mac (length=32):
+Longest topological path in mac (length=24):
+MISMATCH at line 2: a = -127, b = -49, expected 6223, got 0
+MISMATCH at line 3: a = 80, b = 50, expected 10223, got 6223
+MISMATCH at line 4: a = -12, b = -73, expected 11099, got 10223
+FAIL: 188 of 208 checks failed
+PASS: 208 of 208 checks passed

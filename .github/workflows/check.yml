@@ -1,0 +1,28 @@
+name: Check book
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check links, chapter structure and box format
+        run: python3 scripts/check_book.py
+      - name: Report translation status
+        run: python3 scripts/check_translations.py
+      - name: Compare the structure of every translation with the original
+        run: python3 scripts/check_translations.py --structure
+      - name: Install Icarus Verilog and Yosys
+        run: sudo apt-get update && sudo apt-get install -y iverilog yosys
+      - name: Re-run every Try-it section
+        run: bash practice/run_all.sh
